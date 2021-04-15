@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Week 9 - Airtable API</title>
+
+    <!-- add reset to create consistency between browsers and devices. -->
+   <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="lib/airtable.browser.js"defer></script>
+    <script src="main.js" defer></script>
+    <script src="drag.js"defer> </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+    <!-- add link to your javascript. be sure it includes "defer" -->
+   
+</head>
+
+<body>
+<section class="main">
+    <div class="main-leftpanel">
+    <div class="cover">
+          <div class="container">
+        <div class="coverwrap"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="main-rightpanel">
+        <div class="name"> Choose your interests </div>
+        <div id="choices">
+        <div class='drag a' id='a'>
+            <div class="filter">
+                <button id= "yummy">yummy</button>
+                <button id="wordy">wordy</button>
+                <button id="colors">colors</button> 
+                <button id="blackandwhite">b&w</button>
+                <button id="historical">historical</button>
+                <button id="informational">informational</button>
+                <button id="funky">funky</button>
+                <button id="personal">personal</button>
+                <button id="reset">reset</button>
+            </div>
+        </div>
+        <div class='drag b' id='b'>
+            <button id="box1"> What is your mood?un </button>
+        </div>
+        <div class='drag c' id='c'>
+            <div class="filter">
+            <button id="book"> Book of the Day </button></div>
+        </div>
+        <div class='drag d' id='d'>
+            <button id="food">Flavor of the Day</button>
+        </div>
+        <div class='drag e' id='e'> 
+            <div class="filter"> 
+                <button id="books"> books </button>
+                <button id="typography"> typography </button>
+                <button id="illustration"> illustration </button>
+                <button id="photography">photography</button>
+                <button id="recipes">recipes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

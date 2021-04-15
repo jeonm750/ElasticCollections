@@ -1,0 +1,284 @@
+body{
+  margin: 0;
+  font-family: 'Days One', sans-serif;
+
+
+}
+.main {
+  height: 100%;
+  display: flex;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.main-leftpanel {
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  width: 25vw;
+  background-color: #3E5DFF;
+  align-content: center;
+  font-size: 40px;
+  border: solid black 2px;
+  z-index: 200;
+}
+
+.cover {
+  width: 25vw;
+
+}
+
+.main-rightpanel {
+  right: 0;
+  top:0;
+  width: 75vw;
+  background-color: #FFEC42;
+  background-image: linear-gradient(#FFEC42, #3E5DFF);
+  border: solid black 2px;
+}
+
+.name{
+  color: black;
+  margin-top: 10px;
+  margin-left: 20vw;
+}
+
+/*movieName (h2)*/
+
+h2{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 58px;
+  text-align: left;
+
+}
+
+
+.genreTag, .topicTag, .todayTag {
+  padding: 1px 20px;
+  border: 2px solid black;
+  margin: 4px;
+  border-radius: 8px;
+  background-color: #DEE5F4;
+  color: black;
+  font-size: 25px;
+  text-align: left;
+
+}
+
+.bookContainer{
+  padding:13px 24px;
+  border: 2px solid white;
+  margin:8px;
+  border-radius: 8px;
+  width: 30vw;
+  height: 40vw;
+}
+
+
+.book-container{
+  background-color: white;
+  position: absolute;
+  display: none;
+  width: 30vw;
+  height: 40vw;
+  margin: auto;
+  padding: 20px;
+  z-index: 1;
+  box-shadow: 20px 20px black;
+  border: solid black 2px;
+
+}
+
+
+.active{
+  display: inline-block; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 33vw;
+  top: 5vw;
+  background-color: white; 
+   overflow-wrap: break-word;
+
+  
+}
+
+.coverwrap{
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+}
+
+.bigbookContainer.active{
+  display: block;
+  position: absolute;
+
+}
+
+
+img{
+  width: 383px;
+  height: auto;
+  margin-left: 30px;
+  margin-top: 30px;
+  border: solid black 2px;
+  
+}
+
+img:hover{
+  filter: brightness(50%);
+}
+
+/* drag boxes */
+#choices {
+  position: absolute;
+  border: 0px;
+  text-align: center;
+  font-size: 30px;
+
+}
+/*
+.drag {
+    position: absolute;
+    float: left;
+    margin: 5px;
+    z-index: 100;
+} */
+.drag {
+    position: absolute;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: grey;
+    margin: 5px;
+    z-index: 100
+}
+
+.all {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+} 
+
+/* customize drag box */
+.a {
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px black;
+  border: 2px solid black;
+  width: 500px;
+  height: 350px;
+  margin: 10px;
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}
+.b {
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px black;
+  border: 2px solid black;
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}
+.c {
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px black;
+  border: 2px solid black;
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}
+.d {
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px black;
+  border: 2px solid black;
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}
+.e {
+  background-color: white;
+  color: black;
+  box-shadow: 10px 10px black;
+  border: 2px solid black;
+  width: 450px;
+  height: 280px;
+  margin: 10px;
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}
+
+.a {top:30vw;left: 10vw;}
+.b {top: 12vw;left: 23vw;}
+.c {top: 25vw; left: 53vw;}
+.d {top: 5vw;left:5vw;}
+.e {top: 5vw;left:40vw;}
+.f { top: 20vw;left:35vw }
+
+/* filter buttons */
+.filter {
+  text-align: left;
+}
+.filter button{ 
+  font-size: 35px;
+  margin: 5px;
+  padding: 7px;
+  background-color: white; 
+  font-family: 'Days One', sans-serif;
+
+}
+.e button{
+  font-size: 35px;
+  margin: 5px;
+  padding: 7px;
+  background-color: white; 
+  font-family: 'Days One', sans-serif;
+
+}
+.b button{
+  font-size: 35px;
+  margin: 80px;
+  padding: 0px;
+  background-color: transparent; 
+  font-family: 'Days One', sans-serif;
+  border: 0px solid transparent;
+}
+.c button{
+  font-size: 35px;
+  margin: 50px;
+  padding: 0px;
+  background-color: transparent; 
+  font-family: 'Days One', sans-serif;
+  border: 0px solid transparent;
+}
+.d button{
+  font-size: 35px;
+  margin: 40px;
+  padding: 0px;
+  background-color: transparent; 
+  font-family: 'Days One', sans-serif;
+  border: 0px solid transparent;
+}
+
+
